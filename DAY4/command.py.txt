@@ -1,0 +1,16 @@
+import sys
+from wordcount import count_words
+
+def main():
+    if len(sys.argv) != 2:
+        print("Usage: command.py Apple.txt")
+        return
+
+    filename = sys.argv[1]
+    word_counts = count_words(filename)
+
+    for word, count in word_counts.items():
+        print(f"{word}: {count}")
+
+if _name_ == "__main__":
+    main()

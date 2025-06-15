@@ -1,0 +1,8 @@
+1.openai reso(portal.azure.com)
+2.deploy(oai.azure.com) -> text-embedding-ada-002
+3.bill_sum.csv from github link and put into folder name of 14embedding 
+4.pip install => command prompt
+5.az login in windows shell
+6. keys& end point (same reso in step 1)
+7. setx environment variables
+8. python code

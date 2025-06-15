@@ -1,0 +1,71 @@
+
+17:03: # Set OpenAI configuration settings
+openai.api_type = "azure"
+openai.api_base = azure_oai_endpoint
+openai.api_version = "2023-03-15-preview"
+openai.api_key = azure_oai_key
+
+# Send request to Azure OpenAI model
+print("Sending request for summary to Azure OpenAI endpoint...\n\n")
+response = openai.ChatCompletion.create(
+    engine=azure_oai_model,
+    temperature=0.7,
+    max_tokens=120,
+    messages=[
+       {"role": "system", "content": "You are a helpful assistant. Summarize the following text in 60 words or less."},
+        {"role": "user", "content": text}
+    ]
+)
+
+print("Summary: " + response.choices[0].message.content + "\n")
+
+4d00d14a85214a0a86b5bfd8dc6b95a8
+
+dda88ae229c6442cb69b3464de6922f1
+
+
+
+//Build completion options object
+    ChatCompletionsOptions ChatCompletionsOptions = new ChatCompletionsOptions()
+    {
+        Messages =
+        {
+            new ChatMessage(ChatRole.System, "You are a helpful assistant. Summarize the following text in 60 words or less,"),
+            new ChatMessage(ChatRole.user, text),
+        },
+        MaxTokens = 120,
+        Temperature - 0.7f,
+    };
+
+
+
+Sheetal Makhija (to All - Entire Audience):
+
+12:45: //Send Request to Azure OpenAI model
+    ChatCompletions response = client.GetChatCompletions(
+        deploymentOrModelName: oaiModelName,
+        chatCompletionsOptions);
+    string completion = response.Choices[0].Message.Content;
+
+    Console.WriteLine("Summary: " + completion + "\n");
+
+
+
+Q: yes                                                    a22b9f454ad14590b6267d37f39c984f
+                                                              https://new-trail-openaiml.openai.azure.com/
+                                                              new-thursday
+
+
+LLum8x3D!
+
+[openai.api_type = "azure"
+        openai.api_base = azure_oai_endpoint                  dc9b2b8bdf20464d98e3687f2300023f          
+        openai.api_version = "2023-05-15"                      https://13oct-demo.openai.azure.com/
+        openai.api_key = azure_oai_key]                          13oct-openai
+
+
+
+
+ OPENAI_API_KEY=xxxxxx
+OPENAI_API_BASE=https://xxxxxxxx.openai.azure.com/
+OPENAI_API_VERSION=2023-05-15

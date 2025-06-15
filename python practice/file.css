@@ -1,0 +1,15 @@
+* Example styles for table headers */
+th {
+    background-color: #3498db;
+    color: green;
+}
+
+/* Example styles for table rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Example styles for table cells */
+td {
+    padding: 5px;
+}

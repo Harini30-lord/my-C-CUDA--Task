@@ -1,0 +1,28 @@
+sample.txt:             
+i have the bad day
+god has another plan
+don't ever give up
+
+OUTPUT:
+SORTING PHASE:
+first  second,1   third
+i,1     god,1     don't,1
+       has,1     ever ,1
+have,1  another,1  give up ,1
+the,1   plan,1
+bad  ,1    
+day,1
+
+OUTPUT:
+SHUFFLE PHASE:another 1
+            bad 1
+           day 1
+           ever 1
+             give up 1
+             i 1
+             have 1
+             has 1
+
+H78236#88
+Deltalake
+To terminate a mapreduce job, use the following command  hadoop job -kill job_1697697472348_0006
